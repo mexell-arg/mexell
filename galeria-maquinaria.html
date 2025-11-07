@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--====== Favicon ======-->
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523081/favicon_zqeiyy.png" type="image/x-icon">
+  <!--====== BOOTSTRAP CSS ======-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--====== ICONOS ======-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--====== SWIPER CSS ======-->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <!--====== LIGHTBOX CSS ======-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <title>Mexell - Galería de Maquinarias</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ==== ESTILOS GALERÍA ==== */
+    .gallery-section {
+      padding: 4rem 0;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+      font-weight: bold;
+      color: var(--first-color, #0B3558);
+    }
+
+    .gallery-grid {
+      column-count: 3;
+      column-gap: 1rem;
+    }
+
+    .gallery-grid a {
+      display: inline-block;
+      margin-bottom: 1rem;
+      break-inside: avoid;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .gallery-grid {
+        column-count: 2;
+      }
+    }
+    @media (max-width: 576px) {
+      .gallery-grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="header__top" id="header-top">
+          <div class="container header__top-container">
+            <a href="tel:+541145427353"><i class="ri-phone-fill"></i> +54 (011) 4542-7353</a>
+            <a href="mailto:info@mexell.com.ar"><i class="ri-mail-fill"></i> info@mexell.com.ar</a>
+            <a href="https://wa.me/5491123146083" target="_blank">
+              <i class="ri-whatsapp-fill"></i> WhatsApp
+            </a>
+          </div>
+      </div>
+      <div class="header__main">
+          <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523120/logo_original_bj5ajq.png" alt="Mexell Logo">
+            </a>
+            <nav class="nav__menu" id="nav-menu">
+                <ul class="nav__links">
+                  <li><a href="index.html" class="nav__link">Inicio</a></li>
+                  <li><a href="index.html#about" class="nav__link">Sobre Nosotros</a></li>
+                  <li class="nav__item dropdown">
+                    <a href="index.html#services" class="dropdown__link">Servicios <span class="dropdown__icon"></span></a>
+                    <ul class="dropdown__menu">
+                      <li><a href="ingenieria-diseno.html">Ingeniería y Diseño a Medida</a></li>
+                      <li><a href="oee-smed.html">Optimización OEE y Cambios de Formato (SMED)</a></li>
+                      <li><a href="fabricacion-mecanizados.html">Fabricación de Precisión y Mecanizados</a></li>
+                      <li><a href="mantenimiento-retrofit.html">Mantenimiento, Repuestos y Retrofitting</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
+                  <li><a href="index.html#contact" class="nav__link">Contacto</a></li>
+                  <li class="nav__item dropdown">
+                    <a href="#" class="dropdown__link">Galerías <span class="dropdown__icon"></span></a>
+                    <ul class="dropdown__menu">
+                      <li><a href="galeria-maquinaria.html">Galería de Maquinaria</a></li>
+                      <li><a href="galeria-repuestos.html">Galería de Repuestos</a></li>
+                      <li><a href="galeria-retrofitting.html">Galería de Retrofitting</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </nav>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+               <i class="ri-apps-2-line"></i>
+            </button>
+          </div>
+      </div>
+    </header>
+    <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero hero--fabricacion" style="background-image: url('https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523152/mantenimiento_hero_equipo-en-accion_final_f92qvd.jpg');">
+        <div class="overlay"></div>
+        <div class="hero__content container text-center">
+            <h1>Galería de Maquinarias</h1>
+            <h2>Explora algunos de nuestros proyectos y componentes modernizados.</h2>
+        </div>
+    </section>
+
+    <!-- ========== GALERÍA ========== -->
+    <section class="gallery-section container">
+      <div class="gallery-grid">
+        <!-- Ejemplos, reemplazar por tus fotos -->
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523072/20171011_100437_h8pts2.jpg" data-lightbox="retrofitting" data-title="Proyecto 1">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523072/20171011_100437_h8pts2.jpg" alt="Retrofitting 1">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523074/20171011_102029_jylosu.jpg" data-lightbox="retrofitting" data-title="Proyecto 2">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523074/20171011_102029_jylosu.jpg" alt="Retrofitting 2">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523065/bayer_matriz_en_maquina_fb8hdt.jpg" data-lightbox="retrofitting" data-title="Proyecto 3">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523065/bayer_matriz_en_maquina_fb8hdt.jpg" alt="Retrofitting 3">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523067/can_crusher_2_p44rze.jpg" data-lightbox="retrofitting" data-title="Proyecto 4">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523067/can_crusher_2_p44rze.jpg" alt="Retrofitting 4">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523072/elevador_de_no_se_que_en_unilever_dise%C3%B1o_pilar_drilcr.jpg" data-lightbox="retrofitting" data-title="Proyecto 5">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523072/elevador_de_no_se_que_en_unilever_dise%C3%B1o_pilar_drilcr.jpg" alt="Retrofitting 5">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523069/empujador_1_iiagg9.jpg" data-lightbox="retrofitting" data-title="Proyecto 6">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523069/empujador_1_iiagg9.jpg" alt="Retrofitting 6">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523083/grippers_sedal_2_oljsih.jpg" data-lightbox="retrofitting" data-title="Proyecto 7">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523083/grippers_sedal_2_oljsih.jpg" alt="Retrofitting 7">
+        </a>
+         <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523092/higienizadora_real_onmgbl.jpg" data-lightbox="retrofitting" data-title="Proyecto 8">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523092/higienizadora_real_onmgbl.jpg" alt="Retrofitting 8">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523120/Ledesma_perforadora_mhtin7.jpg" data-lightbox="retrofitting" data-title="Proyecto 9">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523120/Ledesma_perforadora_mhtin7.jpg" alt="Retrofitting 9">
+        </a>
+        <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523154/matriz_corte_ades_unilever_dleiy5.jpg" data-lightbox="retrofitting" data-title="Proyecto 10">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523154/matriz_corte_ades_unilever_dleiy5.jpg" alt="Retrofitting 10">
+        </a>
+         <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523154/matriz_corte_instalada_fwwba7.jpg" data-lightbox="retrofitting" data-title="Proyecto 11">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523154/matriz_corte_instalada_fwwba7.jpg" alt="Retrofitting 11">
+        </a>
+         <a href="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523208/Roemmers_llenadora_de_polvo_2_qaytyw.jpg" data-lightbox="retrofitting" data-title="Proyecto 12">
+          <img src="https://res.cloudinary.com/dfgs3uyiu/image/upload/v1762523208/Roemmers_llenadora_de_polvo_2_qaytyw.jpg" alt="Retrofitting 12">
+        </a>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta section text-center">
+        <h2>¿Quiere modernizar sus equipos industriales?</h2>
+        <p>Contáctenos y descubra cómo el retrofitting puede maximizar la vida útil de sus activos.</p>
+        <a href="index.html#contact" class="btn">Solicitar Información</a>
+    </section>
+
+    </main>
+
+    <!-- Botones flotantes -->
+    <div class="floating-buttons">
+      <a href="https://wa.me/5491123146083" target="_blank" class="floating-btn whatsapp" aria-label="WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+      </a>
+      <a href="https://calendly.com/reuniones-mexell/30min" target="_blank" class="floating-btn video" aria-label="Videollamada">
+        <i class="ri-calendar-check-fill"></i>
+      </a>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__about">
+          <h2 class="footer__logo">Mexell</h2>
+          <p>Ingeniería y soluciones metalúrgicas para la industria. Innovación, eficiencia y calidad al servicio de tu producción.</p>
+        </div>
+        <div class="footer__links">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Empresa</a></li>
+            <li><a href="index.html#services">Servicios</a></li>
+            <li><a href="index.html#projects">Proyectos</a></li>
+            <li><a href="index.html#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h3>Contáctanos</h3>
+          <ul>
+            <li><i class="ri-mail-line"></i> contacto@mexell.com</li>
+            <li><i class="ri-phone-line"></i> +54 011 4542 7353</li>
+            <li><i class="ri-map-pin-line"></i> Machaín 4729, Buenos Aires</li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h3>Síguenos</h3>
+          <div class="footer__social-icons">
+            <a href="https://wa.me/5491123146083" target="_blank"><i class="ri-whatsapp-line"></i></a>
+            <a href="https://calendly.com/reuniones-mexell/30min" target="_blank"><i class="ri-calendar-check-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-box-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Mexell S.A. - Todos los derechos reservados</p>
+      </div>
+    </footer>
+ 
+
+    <!--====== SCRIPTS ======-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <!--====== LIGHTBOX JS ======-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
